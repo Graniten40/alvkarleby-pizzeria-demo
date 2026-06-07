@@ -1,73 +1,42 @@
-# React + TypeScript + Vite
+# Älvkarleby Pizzeria Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Detta är en demohemsida för en pizzeria i Älvkarleby.
 
-Currently, two official plugins are available:
+Syftet med projektet är att visa hur en modern och mobilanpassad landningssida med digital meny kan se ut för en lokal restaurang.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Innehåll
 
-## React Compiler
+Demon innehåller:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Hero-sektion
+- Pizzerians namn
+- Knapp till meny
+- Digital meny med kategorier
+- Pizza, kebab, sallad och dryck
+- Öppettider
+- Kontaktuppgifter
+- Adress
+- Mobilanpassad design
+- Modern restaurangdesign
 
-## Expanding the ESLint configuration
+## Teknik
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Projektet är byggt med:
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- React
+- Vite
+- TypeScript
+- CSS
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## Syfte
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Detta är endast en demonstrationssida.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Projektet innehåller inget ordersystem, ingen onlinebetalning och ingen backend i nuläget.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Kom igång
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Installera dependencies:
+
+```bash
+npm install
