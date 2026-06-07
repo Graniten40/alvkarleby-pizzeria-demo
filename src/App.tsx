@@ -110,6 +110,7 @@ function App() {
             <a href="#menu">Meny</a>
             <a href="#hours">Öppettider</a>
             <a href="#contact">Kontakt</a>
+            <a href="#map">Karta</a>
           </div>
         </nav>
 
@@ -136,15 +137,43 @@ function App() {
       </section>
 
       <section className="intro-section">
-        <div>
+        <div className="intro-header">
           <p className="section-label">Enkel demo</p>
           <h2>En snygg pizzeriasida utan ordersystem</h2>
+          <p>
+            En modern landningssida där kunder snabbt kan hitta menyn,
+            öppettiderna och kontaktuppgifter direkt i mobilen.
+          </p>
         </div>
 
-        <p>
-          Den här demon visar hur en enkel hemsida kan se ut innan man bygger
-          vidare med onlinebeställning, betalning eller app-notiser.
-        </p>
+        <div className="feature-grid">
+          <article className="feature-card">
+            <span>🍕</span>
+            <h3>Digital meny</h3>
+            <p>
+              Kunden kan enkelt se pizzor, kebab, sallader och dryck utan att
+              behöva ringa eller leta på sociala medier.
+            </p>
+          </article>
+
+          <article className="feature-card">
+            <span>📱</span>
+            <h3>Mobilanpassad</h3>
+            <p>
+              Sidan fungerar bra i mobilen, vilket är där de flesta kunder
+              tittar innan de beställer mat.
+            </p>
+          </article>
+
+          <article className="feature-card">
+            <span>⚡</span>
+            <h3>Snabb och enkel</h3>
+            <p>
+              Ingen app behövs. Kunden öppnar bara hemsidan och hittar all
+              viktig information direkt.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="menu" className="menu-section">
@@ -225,6 +254,23 @@ function App() {
             </p>
           </div>
         </article>
+      </section>
+
+      <section id="map" className="map-section">
+        <div className="section-header">
+          <p className="section-label">Hitta hit</p>
+          <h2>Besök oss i Älvkarleby</h2>
+          <p>Kunden kan enkelt hitta restaurangen direkt via kartan.</p>
+        </div>
+
+        <div className="map-container">
+          <iframe
+            title="Karta till Älvkarleby Pizzeria"
+            src="https://www.google.com/maps?q=Älvkarleby&output=embed"
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
       </section>
 
       <footer>
